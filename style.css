@@ -1,0 +1,138 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f2f5; /* Light gray background */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align to the top of the container */
+    min-height: 100vh; /* Full viewport height */
+}
+
+.container {
+    max-width: 900px;
+    width: 100%;
+    margin: 30px 0; /* Add some margin top/bottom */
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px; /* Softer rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* More pronounced shadow */
+    border: 1px solid #e0e0e0; /* Subtle border */
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50; /* Darker blue-gray for headings */
+    margin-bottom: 30px;
+    font-size: 2.5em; /* Larger main title */
+    position: relative;
+    padding-bottom: 15px;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #007bff; /* Primary color highlight */
+    border-radius: 2px;
+}
+
+h2 {
+    color: #007bff; /* Primary blue for subheadings */
+    border-bottom: none; /* Remove default border */
+    padding-bottom: 0;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    position: relative;
+    padding-left: 15px;
+}
+
+h2::before {
+    content: '•'; /* Bullet point icon */
+    position: absolute;
+    left: 0;
+    color: #007bff;
+    font-size: 1.2em;
+    top: 5px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 30px 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    display: flex; /* Use flexbox for alignment */
+    align-items: baseline;
+}
+
+ul li strong {
+    min-width: 150px; /* Wider for better alignment of labels */
+    color: #555;
+    font-weight: 600; /* Slightly bolder */
+}
+
+ul li a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+p {
+    text-align: justify; /* Justify text for a cleaner look */
+    margin-bottom: 15px;
+}
+
+.section-content {
+    margin-left: 0; /* Remove margin-left as we're using padding for items */
+    padding-left: 20px; /* Indent section content slightly */
+    border-left: 3px solid #e0e0e0; /* Subtle vertical line */
+}
+
+.education-item {
+    margin-bottom: 20px;
+    padding-left: 20px; /* Add more padding */
+    border-left: none; /* Remove previous border */
+    position: relative; /* For the custom bullet */
+}
+
+.education-item::before {
+    content: '▪'; /* Custom bullet point */
+    position: absolute;
+    left: 0;
+    color: #007bff;
+    font-size: 1.2em;
+    top: 0;
+}
+
+.education-item h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #2c3e50;
+    font-size: 1.25em;
+}
+
+.education-item p {
+    margin: 0;
+    font-size: 0.95em;
+    color: #666;
+}
